@@ -13,8 +13,14 @@ int main()
     b.muestraFecha();
     c.muestraFecha();
     c.convierte(4,2,2020);
-    if(c.leapyr(2400)){
-        cout << "Es bisiesto";
+    int contador=0;
+
+
+    for (int i = 0; i <2020; ++i) {
+        if(c.leapyr(i)){
+            contador++;
+        }
     }
+    cout << "Tenemos "<< contador << " Años bisisestos";
 
 }
