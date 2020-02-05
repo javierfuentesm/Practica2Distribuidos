@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/rjfm/CLionProjects/untitled/Fecha.cpp
-Fecha.h
 /home/rjfm/CLionProjects/untitled/Fecha.h
+
+/home/rjfm/CLionProjects/untitled/main.cpp
 iostream
 -
-
+stdlib.h
+-
+time.h
+-
+Fecha.h
 /home/rjfm/CLionProjects/untitled/Fecha.h
 

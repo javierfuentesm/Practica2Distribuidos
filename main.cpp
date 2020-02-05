@@ -42,9 +42,8 @@ int main()
     }
     cout << "Tenemos "<< contador << " Años bisisestos";
     int n=20;
-
+    clock_t start = clock();
     srand(time(NULL));
-
     for(int i=0;i<n;i++){
         int randomYear1 = (rand()%999)+1020;
         int randomMonth1 = (rand()%12)+1;
@@ -55,5 +54,9 @@ int main()
 
         cout << masVieja(prueba.convierte(randomDays1,randomMonth1,randomYear1),prueba2.convierte(randomDays2,randomMonth2,randomYear2)) << endl;
     }
+    clock_t stop = clock();
+    double elapsed = (double) (stop - start) / CLOCKS_PER_SEC;
+    printf("\nTime elapsed: %.5f\n", elapsed);
+    return 0;
 
 }
