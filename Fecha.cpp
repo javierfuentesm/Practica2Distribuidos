@@ -22,9 +22,9 @@ void Fecha::muestraFecha()
     return;
 }
 
-void Fecha::convierte(int dd, int mm, int aaaa) {
+int Fecha::convierte(int dd, int mm, int aaaa) {
     int fconvertida = aaaa*1000+mm*100+dd;
-    cout << "La fecha convertida es " << fconvertida << endl;
+    return fconvertida;
 
 
 }

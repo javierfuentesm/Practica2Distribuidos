@@ -12,7 +12,7 @@ public:
     void inicializaFecha(int, int, int);
     void muestraFecha();
     void leapyr();
-    void convierte(int dd, int mm, int aaaa);
+    int convierte(int dd, int mm, int aaaa);
 
     bool leapyr(int anio);
 };
